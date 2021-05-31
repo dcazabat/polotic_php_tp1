@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel='stylesheet' href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css'>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/scrollconteiner.css">
 
     <!-- JS's -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" defer></script>
@@ -24,7 +25,7 @@
 
 </head>
 
-<body id="body-pd" data-spy="scroll" data-target="#myScrollspy" data-offset="1">
+<body class="content" id="body-pd" data-spy="scroll" data-target="#myScrollspy" data-offset="1">
     <header class="header" id="header">
         <div class="header_toggle">
             <i class="fas fa-align-justify" id="header-toggle"></i>
@@ -56,8 +57,9 @@
                 <i class="fab fa-whatsapp-square"></i>
             </a>
         </div>
-
     </header>
+
+    <!-- NavBar -->
     <div class="left-navbar" id="nav-bar">
         <nav class="nav" id="myScrollspy">
             <div>
@@ -74,7 +76,7 @@
                         <i class="fas fa-user-shield nav_icon"></i>
                         <span class="nav_name">Objetivo Personal</span>
                     </a>
-                    <a href="#developer" class="nav_link scrollLink">
+                    <a href="#developer" class="nav_link scrollLink active">
                         <i class="fab fa-dev nav_icon"></i>
                         <span class="nav_name">Desarrollador / IT</span>
                     </a>
@@ -92,126 +94,195 @@
                     </a>
                     <a href="#college" class="nav_link scrollLink">
                         <i class="fas fa-university nav_icon"></i>
-                        <span class="nav_name">Terciario / Universitario</span>
-                    </a>
-                    <a href="#preparatory" class="nav_link scrollLink">
-                        <i class="fas fa-graduation-cap nav_icon"></i>
-                        <span class="nav_name">Secundario</span>
+                        <span class="nav_name">Estudios Previos</span>
                     </a>
                 </div>
+                <a href="#intranet" class="nav_link scrollLink">
+                    <i class="fas fa-sign-in-alt nav_icon"></i>
+                    <span class="nav_name">Consultas</span>
+                </a>
             </div>
-            <a href="#intranet" class="nav_link scrollLink">
-                <i class="fas fa-sign-in-alt nav_icon"></i>
-                <span class="nav_name">Intranet</span>
-            </a>
         </nav>
     </div>
+
     <!--Container Main start-->
-    <main id="content" class="height-100 bg-light">
-        <div id="object" style="margin-bottom: 200px;">
+    <main>
+        <div id="object" class="section_display">
             <h3>Objetivo Personal</h3>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias voluptatibus dolores perspiciatis,
-                possimus tempora repellendus rerum assumenda dolore accusamus nostrum fugiat, aliquid laborum
-                exercitationem
-                quos velit tempore, dolor optio? Ex culpa error est consequatur magnam, inventore in pariatur tempore
-                deleniti tenetur repellat alias ab. Iusto totam nam ut minus in quidem cum fugit vero, provident a?
-                Nostrum
-                eveniet, suscipit aliquid quibusdam recusandae quas laborum officiis explicabo ullam quo optio, dolor,
-                quis
-                obcaecati eius eligendi laboriosam? Sequi consequuntur minima dolor ex dolorem eaque temporibus suscipit
-                itaque esse, nulla quidem aut animi ipsa fuga magnam nostrum sit quibusdam, rerum unde ab consequatur
-                porro
-                commodi quas. Amet fugit aspernatur id aperiam. Rem aut architecto odit exercitationem harum voluptates
-                ipsam, enim corrupti molestiae minima distinctio officia adipisci perspiciatis iure unde. Doloribus
-                vitae,
-                nisi veniam impedit sint alias quos ullam rerum provident possimus adipisci ipsum minus molestiae quas
-                veritatis nobis cumque quo vel sapiente culpa! Voluptates quae accusamus molestiae pariatur iure
-                consectetur. Temporibus magnam perspiciatis facilis iure dolorem dignissimos? Dicta nesciunt id ex
-                voluptate
-                deleniti. Eum, accusantium reiciendis dignissimos nobis hic saepe, neque veniam nihil voluptatem
-                excepturi
-                suscipit illum sint perferendis at vel blanditiis facere minus explicabo est quo sapiente dolore non
-                laudantium soluta. Blanditiis consequuntur magni alias voluptas maxime, tempore aliquam nostrum fugiat
-                laborum nihil officiis eligendi? Molestias ipsam, labore voluptatem neque nostrum recusandae, obcaecati
-                ratione quisquam commodi aliquid aperiam sit, adipisci culpa? Assumenda odio eligendi porro dolore iste
-                aliquid quod? Atque quidem voluptates, labore odit iure tenetur, sapiente temporibus accusantium
-                molestias,
-                voluptate ut amet nulla cupiditate reprehenderit. Earum mollitia molestiae sapiente adipisci neque nemo
-                corrupti recusandae, laboriosam nam libero optio dolorem est ad perferendis fuga fugit voluptatem
-                quisquam
-                facere ratione fugiat, eum aut numquam. Officia inventore facilis id ratione atque, provident
-                dignissimos
-                ipsum, voluptatem eaque ullam perspiciatis harum. Rerum dolor quo libero reiciendis!
-            </p>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias voluptatibus dolores perspiciatis,
-                possimus tempora repellendus rerum assumenda dolore accusamus nostrum fugiat, aliquid laborum
-                exercitationem
-                quos velit tempore, dolor optio? Ex culpa error est consequatur magnam, inventore in pariatur tempore
-                deleniti tenetur repellat alias ab. Iusto totam nam ut minus in quidem cum fugit vero, provident a?
-                Nostrum
-                eveniet, suscipit aliquid quibusdam recusandae quas laborum officiis explicabo ullam quo optio, dolor,
-                quis
-                obcaecati eius eligendi laboriosam? Sequi consequuntur minima dolor ex dolorem eaque temporibus suscipit
-                itaque esse, nulla quidem aut animi ipsa fuga magnam nostrum sit quibusdam, rerum unde ab consequatur
-                porro
-                commodi quas. Amet fugit aspernatur id aperiam. Rem aut architecto odit exercitationem harum voluptates
-                ipsam, enim corrupti molestiae minima distinctio officia adipisci perspiciatis iure unde. Doloribus
-                vitae,
-                nisi veniam impedit sint alias quos ullam rerum provident possimus adipisci ipsum minus molestiae quas
-                veritatis nobis cumque quo vel sapiente culpa! Voluptates quae accusamus molestiae pariatur iure
-                consectetur. Temporibus magnam perspiciatis facilis iure dolorem dignissimos? Dicta nesciunt id ex
-                voluptate
-                deleniti. Eum, accusantium reiciendis dignissimos nobis hic saepe, neque veniam nihil voluptatem
-                excepturi
-                suscipit illum sint perferendis at vel blanditiis facere minus explicabo est quo sapiente dolore non
-                laudantium soluta. Blanditiis consequuntur magni alias voluptas maxime, tempore aliquam nostrum fugiat
-                laborum nihil officiis eligendi? Molestias ipsam, labore voluptatem neque nostrum recusandae, obcaecati
-                ratione quisquam commodi aliquid aperiam sit, adipisci culpa? Assumenda odio eligendi porro dolore iste
-                aliquid quod? Atque quidem voluptates, labore odit iure tenetur, sapiente temporibus accusantium
-                molestias,
-                voluptate ut amet nulla cupiditate reprehenderit. Earum mollitia molestiae sapiente adipisci neque nemo
-                corrupti recusandae, laboriosam nam libero optio dolorem est ad perferendis fuga fugit voluptatem
-                quisquam
-                facere ratione fugiat, eum aut numquam. Officia inventore facilis id ratione atque, provident
-                dignissimos
-                ipsum, voluptatem eaque ullam perspiciatis harum. Rerum dolor quo libero reiciendis!
-            </p>
+            <hr>
+            <p>Poder seguir desarrollándome en lo que siempre me apasiona y me produzca crecimiento personal y laboral,
+                aplicando todos los conocimientos adquiridos para realizar cualquier tarea que realice, pensando siempre
+                en 2 cosas “el conocimiento no ocupa lugar” y “no hacer las cosas hasta que salgan bien, sino hasta que
+                no puedan salir mal”, eso me define.</p>
         </div>
-        <div id="developer">
-            <h3>Desarrollador</h3>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias voluptatibus dolores perspiciatis,
-                possimus tempora repellendus rerum assumenda dolore accusamus nostrum fugiat, aliquid laborum
-                exercitationem
-                quos velit tempore, dolor optio? Ex culpa error est consequatur magnam, inventore in pariatur tempore
-                deleniti tenetur repellat alias ab. Iusto totam nam ut minus in quidem cum fugit vero, provident a?
-                Nostrum
-                eveniet, suscipit aliquid quibusdam recusandae quas laborum officiis explicabo ullam quo optio, dolor,
-                quis
-                obcaecati eius eligendi laboriosam? Sequi consequuntur minima dolor ex dolorem eaque temporibus suscipit
-                itaque esse, nulla quidem aut animi ipsa fuga magnam nostrum sit quibusdam, rerum unde ab consequatur
-                porro
-                commodi quas. Amet fugit aspernatur id aperiam. Rem aut architecto odit exercitationem harum voluptates
-                ipsam, enim corrupti molestiae minima distinctio officia adipisci perspiciatis iure unde. Doloribus
-                vitae,
-                nisi veniam impedit sint alias quos ullam rerum provident possimus adipisci ipsum minus molestiae quas
-                veritatis nobis cumque quo vel sapiente culpa! Voluptates quae accusamus molestiae pariatur iure
-                consectetur. Temporibus magnam perspiciatis facilis iure dolorem dignissimos? Dicta nesciunt id ex
-                voluptate
-                deleniti. Eum, accusantium reiciendis dignissimos nobis hic saepe, neque veniam nihil voluptatem
-                excepturi
-                suscipit illum sint perferendis at vel blanditiis facere minus explicabo est quo sapiente dolore non
-                laudantium soluta. Blanditiis consequuntur magni alias voluptas maxime, tempore aliquam nostrum fugiat
-                laborum nihil officiis eligendi? Molestias ipsam, labore voluptatem neque nostrum recusandae, obcaecati
-                ratione quisquam commodi aliquid aperiam sit, adipisci culpa? Assumenda odio eligendi porro dolore iste
-                aliquid quod? Atque quidem voluptates, labore odit iure tenetur, sapiente temporibus accusantium
-                molestias,
-                voluptate ut amet nulla cupiditate reprehenderit. Earum mollitia molestiae sapiente adipisci neque nemo
-                corrupti recusandae, laboriosam nam libero optio dolorem est ad perferendis fuga fugit voluptatem
-                quisquam
-                facere ratione fugiat, eum aut numquam. Officia inventore facilis id ratione atque, provident
-                dignissimos
-                ipsum, voluptatem eaque ullam perspiciatis harum. Rerum dolor quo libero reiciendis!
-            </p>
+        <div id="developer" class="section_display section_diplay_none">
+            <h3>Desarrollador / IT</h3>
+            <hr>
+            <h5>Algunos Desarrollos Desktop</h5>
+            <ul>
+                <li>Sistema Carga y Generación de Sellados (Actividad 18) para Soc. Rural de Bolívar.</li>
+                <li>Sistema de Generación de Archivos para importación con Citi Compras y Ventas</li>
+                <li>Sistema Administrativo para "TNT Word Wide Express" (correo internacional - Su. Mar del Plata).</li>
+                <li>Sistema Administrativo para "Agua Pura" y “Redondo SRL” (control de stock de fábrica y sucursales,
+                    ventas, compras, cuentas corrientes mayoristas y minoristas).</li>
+                <li>Sistema Administrativo Operativo para "Expreso Mapuche" (Control de tráfico de carga en general,
+                    facturación, cuentas corrientes, estadísticas).</li>
+                <li>Sistema Estadístico para "Andreani Logística S.A." (Transporte de cargas - Sucursal Mar del Plata).
+                </li>
+                <li>Sistema para Consultorios Médicos (Control de Turnos, Historias Clínicas, Control de Caja y Obras
+                    Sociales).</li>
+                <li>Sistema para “Mensajería La Costa” (Control de caja diaria, cuentas corrientes y pagos a
+                    distribuidores).</li>
+            </ul>
+            <h5>Algunos Desarrollos Web</h5>
+            <ul>
+                <li>Sitio Web para “Agua Pura”, www.cuerpoyalmamdq.com.ar (Muestra de Productos, Eventos, Club de
+                    Socios), desarrollado en ASP</li>
+                <li>Consultor externo de edición y contenidos de www.mardelplata.com, desarrollos en Flash, Fireworks.
+                </li>
+            </ul>
+        </div>
+        <div id="teaching" class="section_display section_diplay_none">
+            <h3>Enseñanza</h3>
+            <hr>
+            <ul>
+                <li>Dictado de curso de OPERADOR DE PC BAJO ENTORNO GRAFICO en CENTRO DE FORMACIÓN PROFESIONAL Nº 401 de
+                    BOLIVAR desde el 02/04/2002 hasta 15/12/2002.</li>
+                <li>Asesoramiento Estadístico en Tesis de Grado de la carrera de “Licenciatura en Terapia Ocupacional”
+                    de Facultad de Ciencias de la Salud y Servicio Social dependiente de la Universidad de Mar del
+                    Plata, tema de la misma “Conocimiento de los Médicos acerca de la competencia del Licenciado en
+                    Terapia Ocupacional en el Área de Terapia Intensiva”. Fecha 22/11/2001.</li>
+                <li>Particular</li>
+                <ul>
+                    <li>Reparador de PC.</li>
+                    <li>Operador de PC</li>
+                    <li>Redes (cableado y configuración). </li>
+                    <li>Paquete Office (Word, Excel, Access, PowerPoint) </li>
+                </ul>
+            </ul>
+        </div>
+        <div id="others" class="section_display section_diplay_none">
+            <h3>Otros Trabajos Realizados</h3>
+            <hr>
+            <ul>
+                <li>Desde el 15 de noviembre de 2012 a la Fecha, Observador Meteorológico de Superficie en Estación
+                    Meteorológica Aeródromo Bolívar. </li>
+                <li>Desde 1992 y hasta 31 de marzo de 1998 personal de "Andreani S.A." de las sucursales de correo y
+                    cargas de Mar del Plata; desarrollando las tareas de:</li>
+                <ul>
+                    <li>Mensajero 3 meses, año 1992.</li>
+                    <li>Encargado de Mensajería (distribución en Mar del Plata), años 1992 y 1993.</li>
+                    <li>Encargado de Mensajería (distribución de Mar del Plata hacia el país), años 1993 y 1994.</li>
+                    <li>Atención al público en el área de reclamos, años 1994 y 1995.</li>
+                    <li>Ayudante Administrativo, años 1995 y 1996.</li>
+                    <li>Encargado Administrativo, años 1996 a 1998.</li>
+                </ul>
+                <li>Integrante del staff externo del dpto. de sistema de “Andreani S.A.” (programación y consultoría).
+                </li>
+            </ul>
+        </div>
+        <div id="spertices" class="section_display section_diplay_none">
+            <h3>Especializaciones</h3>
+            <hr>
+            <h5>Otras Aptitudes Adquiridas</h5>
+            <ul>
+                <li>Desarrollador Front End (HTML5, CSS, JAVASCRIPT, VUEJS)</li>
+                <li>Desarrollador Full-Stack (Python Django, JAVASCRIPT)</li>
+                <li>SOFTWARE: Microsoft Office (Word, Excel, Access, PowerPoint), Corel Draw, Adobe Photoshop</li>
+                <li>SISTEMAS OPERATIVOS: D.O.S., Windows, Linux Debian y Ubuntu.</li>
+                <li>LENGUAJES DE PROGRAMACIÓN: C#, JavaScript, Delphi, Visual Basic 6, FoxPro, Turbo Pascal</li>
+                <li>REDES: Instalación y mantenimiento de redes de Windows, Windows NT y Linux</li>
+            </ul>
+        </div>
+        <div id="college" class="section_display section_diplay_none">
+            <h3>Estudios Previos Cursados</h3>
+            <hr>
+            <p><span><strong>TERCIARIOS</strong> : Mar del Plata Community College - Bolsa de Comercio.</span></p>
+            <p><strong> Analista de Sistemas de Computación.</strong></p>
+
+            <p><span><strong>SECUNDARIOS</strong> : Escuela de Educación Media Nº 1.</span></p>
+            <p><strong> Bachiller Contable - Perito Mercantil.</strong></p>
+        </div>
+        <div id="intranet" class="section_display section_diplay_none">
+            <h3>CONSULTAS</h3>
+            <hr>
+            <div class="mt-2">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputFirstName">Nombre</label>
+                            <input type="text" class="form-control" name="firstName" id="inputFirstName" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputLastName">Apellido</label>
+                            <input type="text" class="form-control" name="lastName" id="inputLastName" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputAddress">Dirección</label>
+                        <input type="text" class="form-control" name="address" id="inputAddress" placeholder="Calle N°">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputCity">Ciudad</label>
+                            <input type="text" class="form-control" name="city" id="inputCity">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputState">Provincia</label>
+                            <select id="inputState" name="state" class="form-control">
+                                <option selected>Seleccionar...</option>
+                                <option>CABA</option>
+                                <option>Buenos Aires</option>
+                                <option>Cordoba</option>
+                                <option>Santa Fe</option>
+                                <option>Corrientes</option>
+                                <option>Entre Rios</option>
+                                <option>Misiones</option>
+                                <option>Chaco</option>
+                                <option>Formosa</option>
+                                <option>Jujuy</option>
+                                <option>Salta</option>
+                                <option>Tucuman</option>
+                                <option>Santiago del Estero</option>
+                                <option>Catamarca</option>
+                                <option>La Rioja</option>
+                                <option>La Pampa</option>
+                                <option>San Juan</option>
+                                <option>San Luis</option>
+                                <option>Mendoza</option>
+                                <option>Nuequen</option>
+                                <option>Rio Negro</option>
+                                <option>Chubut</option>
+                                <option>Santa Cruz</option>
+                                <option>Tierra del Fuego</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="inputZip">C. P.</label>
+                            <input type="text" class="form-control" name="zipcode" id="inputZip">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-12">
+                            <label for="textConsult">Consulta</label>
+                            <textarea class="form-control" name="comments" id="textConsult" rows="3"
+                                required></textarea>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputEmail">Email a Responder</label>
+                            <input type="email" class="form-control" name="email" id="inputEmail" required>
+                        </div>
+                        <div class="form-group col-md-6 contendbtndiv">
+                            <button type="reset" class="btn btn-danger"><img src="../assets/images/cancel.svg"
+                                    alt="Cancelar"></button>
+                            <button type="submit" class="btn btn-primary"><img src="../assets/images/send.svg"
+                                    alt="Enviar"></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
     </main>
     <!--Container Main end-->
