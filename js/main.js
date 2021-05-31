@@ -1,17 +1,36 @@
-// Cierra o Abre el SideBar
-$(document).ready(function () {
+document.addEventListener("DOMContentLoaded", function (event) {
 
-    $('#sidebarCollapse').on('click', function () {
-        $('#sidebar').toggleClass('active');
-    });
+    const showNavbar = (toggleId, navId, bodyId, headerId) => {
+        const toggle = document.getElementById(toggleId),
+            nav = document.getElementById(navId),
+            bodypd = document.getElementById(bodyId),
+            headerpd = document.getElementById(headerId)
 
+        // Valida si las varianles existen
+        if (toggle && nav && bodypd && headerpd) {
+            toggle.addEventListener('click', () => {
+                // muestra navbar
+                nav.classList.toggle('show')
+                // cambia icon
+                toggle.classList.toggle('header_toggle_rot90')
+                // agrega padding al body
+                bodypd.classList.toggle('body-pd')
+                // agregar padding al header
+                headerpd.classList.toggle('body-pd')
+            })
+        }
+    }
+
+    showNavbar('header-toggle', 'nav-bar', 'body-pd', 'header')
+
+    /* Cambia el estedo el link activo (Active) */
+    const linkColor = document.querySelectorAll('.nav_link')
+
+    function colorLink() {
+        if (linkColor) {
+            linkColor.forEach(l => l.classList.remove('active'))
+            this.classList.add('active')
+        }
+    }
+    linkColor.forEach(l => l.addEventListener('click', colorLink))
 });
-
-//Redirige a las secciones con Scroll y los link tienen la class scrollLink
-/* $(document).ready(function () {
-    $("a.scrollLink").click(function (event) {
-        console.log("scroll")
-        event.preventDefault();
-        $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top }, 500);
-    });
-}); */
